@@ -1,5 +1,6 @@
 import React from "react";
 
+// component that handles the results displayed
 function Result({ result, openPopup }) {
   return (
     <div className="result" onClick={() => openPopup(result.imdbID)}>

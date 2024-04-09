@@ -1,5 +1,6 @@
 import React from "react";
 
+// handling the search functionality of the search bar
 function Search({ handleInput, search }) {
   return (
     <section className="searchbox-wrap">

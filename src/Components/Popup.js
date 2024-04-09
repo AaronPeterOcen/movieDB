@@ -1,7 +1,10 @@
 import React from "react";
 
+// This functional component represents a popup
+// that displays details about a selected movie
 function Popup({ selected, closePopup }) {
   return (
+    // The section element represents the popup container
     <section className="popup">
       <div className="content">
         <h2>
