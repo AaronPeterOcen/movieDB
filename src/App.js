@@ -13,6 +13,7 @@ function App() {
     selected: {},
   });
 
+  // add your api key here
   const apiurl = "https://www.omdbapi.com/?apikey=e68165a0";
 
   const search = (e) => {
@@ -28,9 +29,9 @@ function App() {
     }
   };
 
+  // functionw will handle the input functionality
   const handleInput = (e) => {
     let s = e.target.value;
-
     setState((prevState) => {
       return { ...prevState, s: s };
     });
@@ -38,8 +39,7 @@ function App() {
     // console.log(state.s);
   };
 
-  //
-
+  //handles the pop up functionality of the movies
   const openPopup = (id) => {
     axios(apiurl + "&i=" + id).then(({ data }) => {
       let result = data;
@@ -52,6 +52,7 @@ function App() {
     });
   };
 
+  // handles the pop-up close functionality
   const closePopup = () => {
     setState((prevState) => {
       return { ...prevState, selected: {} };
