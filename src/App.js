@@ -73,11 +73,11 @@ function App() {
         ) : (
           false
         )}
-        <p>
+        {/* <p>
           Challenges are what make life interested and overcoming them is what
           makes life meaningful.
           <p>Joshua J. Marine</p>
-        </p>
+        </p> */}
       </main>
     </div>
   );
